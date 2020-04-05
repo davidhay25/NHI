@@ -1,0 +1,28 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "scen1-pr2",
+  "meta": {
+    "profile": [
+      "http://hl7.org.nz/fhir/StructureDefinition/HpiPractitionerRole"
+    ]
+  },
+  "text": {
+    "div": "<div>Dr Kildaire as pharmacist</div>"
+  },
+  "organization": {
+    "reference": "Organization/ghc"
+  },
+  "practitioner": {
+    "reference": "Practitioner/scen1-prac1"
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/practitioner-role",
+          "code": "pharmacist"
+        }
+      ]
+    }
+  ]
+}

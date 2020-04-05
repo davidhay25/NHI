@@ -1,0 +1,25 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "DHB",
+  "id": "DHB",
+  "title": "The DHB that is responsible for people at this address",
+  "description": "The DHB that is responsible for people at this address",
+  "version": "0.1.0",
+  "url": "https://standards.digital.health.nz/fhir/cs/dhb",
+  "concept": [
+    {
+      "code": "AUCK",
+      "display": "Auckland"
+    },
+    {
+      "code": "BOP",
+      "display": "Bay Of Plenty"
+    },
+    {
+      "code": "CMDHB",
+      "display": "Counties Manukau"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+﻿maoriDescent,
+http://standards.digital.health.nz/fhir/CodeSystem/maoriDescent,
+http://standards.digital.health.nz/fhir/ValueSet/maoriDescent,
+Maori Descent,
+Is the person of maori descent,
+,
+yes,Yes
+no,No
+unknown,Unknown
+notanswered,Not Answered / Declined to answer

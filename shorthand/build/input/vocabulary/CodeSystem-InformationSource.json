@@ -1,0 +1,29 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "InformationSource",
+  "id": "InformationSource",
+  "title": "The source of the information",
+  "description": "Codes used to define where information came from",
+  "version": "0.1.0",
+  "url": "https://standards.digital.health.nz/fhir/cs/informationsource",
+  "concept": [
+    {
+      "code": "MIGR",
+      "display": "Migrated"
+    },
+    {
+      "code": "BREG",
+      "display": "Birth Register"
+    },
+    {
+      "code": "HL7",
+      "display": " HL7 applied"
+    },
+    {
+      "code": "PPRT",
+      "display": "Passport"
+    }
+  ]
+}

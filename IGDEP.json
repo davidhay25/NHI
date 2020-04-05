@@ -1,0 +1,342 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "hl7.org.nz.hpi",
+  "packageId": "hl7.org.nz.hpi",
+  "status": "draft",
+  "url": "http://hl7.org.nz/fhir/ImplementationGuide/hpi",
+  "name": "NzBaseProfiles",
+  "description": "The base profiles defined for use in New Zealand. It is expected that more specific profiles will be derived from this",
+  "fhirVersion": [
+    "4.0.0"
+  ],
+  "publisher": "davidhay",
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "NamingSystem/nzmc"
+        }
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/nznc"
+        }
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/nzmwc"
+        }
+      },
+      {
+        "reference": {
+          "reference": "Patient/patient2"
+        }
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/drmulti"
+        }
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/practitioner3"
+        }
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/practitionerX"
+        }
+      },
+      {
+        "reference": {
+          "reference": "Organization/organization1"
+        }
+      },
+      {
+        "reference": {
+          "reference": "Location/location1"
+        }
+      },
+      {
+        "reference": {
+          "reference": "PractitionerRole/practitionerrole1"
+        }
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/practitionerY"
+        }
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/nhipatient"
+        }
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/HpiPractitioner"
+        }
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/HpiPractitionerRole"
+        }
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/HpiLocation"
+        }
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/HpiOrganization"
+        }
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/HpiEndpoint"
+        }
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/HpiHealthcareService"
+        }
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/HpiCareTeam"
+        }
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/addressnotvalidated"
+        }
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/dodinfosource"
+        }
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/nzdomcode"
+        }
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/nzinfosource"
+        }
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/iwi"
+        }
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/nzmaoridescent"
+        }
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/addressnotvalidated"
+        }
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/dodinfosource"
+        }
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nzdomcode"
+        }
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nzinfosource"
+        }
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nziwi"
+        }
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/nzmaoridescent"
+        }
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cf-informationsource"
+        }
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cf-originalValue"
+        }
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cf-nzBuildingName"
+        }
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cf-patient-addressCoding"
+        }
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cf-notValidatedReason"
+        }
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cf-nzethnicity"
+        }
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cf-patient-nzcitizenship"
+        }
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cf-nzDhb"
+        }
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cf-patient-iwi"
+        }
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cf-address-isPrimary"
+        }
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cf-buildingName"
+        }
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cf-ethnicity"
+        }
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cf-patient-birthPlace"
+        }
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cf-dhb"
+        }
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cf-nziwi"
+        }
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cf-geolocation"
+        }
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cf-patient-maoriDescent"
+        }
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cf-patient-addressDerived"
+        }
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/NzNHIPatient"
+        }
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/hpi-cpn"
+        }
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/hpi-fac"
+        }
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/hpi-org"
+        }
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/hpi-chiro"
+        }
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/hpi-dental"
+        }
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/hpi-diet"
+        }
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/hpi-medlab"
+        }
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/hpi-occ"
+        }
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/hpi-osteo"
+        }
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/hpi-pharmacy"
+        }
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/hpi-physio"
+        }
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/hpi-podiatry"
+        }
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/hpi-psychologist"
+        }
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/hpi-radtech"
+        }
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/hpi-optician"
+        }
+      }
+    ]
+  }
+}

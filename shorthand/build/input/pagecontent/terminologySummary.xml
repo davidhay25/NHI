@@ -1,0 +1,159 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd">
+<h4>NzNHIPatient</h4>
+<h5> Summary by element</h5>
+<table class='table table-condensed table-bordered'>
+
+<tr><th>Path</th><th>Url</th><th>Title</th><th>Description</th><th>CodeSystem Urls</th></tr>
+<tr>
+<td>name.source</td>
+<td>https://standards.digital.health.nz/fhir/ValueSet/informationsource</td>
+<td>Information source</td>
+<td>Where the data in the element was sourced from</td>
+<td><div>https://standards.digital.health.nz/fhir/ValueSet/informationsource</div></td>
+</tr>
+<tr>
+<td>gender</td>
+<td>http://hl7.org/fhir/ValueSet/administrative-gender</td>
+<td></td><td></td><td>This ValueSet not defined in this IG</td>
+</tr>
+<tr>
+<td>birthDate.source</td>
+<td>https://standards.digital.health.nz/fhir/ValueSet/informationsource</td>
+<td>Information source</td>
+<td>Where the data in the element was sourced from</td>
+<td><div>https://standards.digital.health.nz/fhir/ValueSet/informationsource</div></td>
+</tr>
+<tr>
+<td>dateOfDeath.source</td>
+<td>https://standards.digital.health.nz/fhir/ValueSet/informationsource</td>
+<td>Information source</td>
+<td>Where the data in the element was sourced from</td>
+<td><div>https://standards.digital.health.nz/fhir/ValueSet/informationsource</div></td>
+</tr>
+<tr>
+<td>address.derivedData.domicileCode</td>
+<td>https://standards.digital.health.nz/fhir/ValueSet/domicilecode</td>
+<td>Domicile  Code</td>
+<td>A code for the area within which an address is located</td>
+<td><div>https://standards.digital.health.nz/fhir/cs/domicilecode</div></td>
+</tr>
+<tr>
+<td>address.notValidatedReason</td>
+<td>https://standards.digital.health.nz/fhir/ValueSet/addressnotvalidatedreason</td>
+<td>Address not validated reason</td>
+<td>The reason the address was not validated</td>
+<td><div>https://standards.digital.health.nz/fhir/ValueSet/addressnotvalidatedreason</div></td>
+</tr>
+<tr>
+<td>ethnicity</td>
+<td>https://standards.digital.health.nz/fhir/ValueSet/ethnicity</td>
+<td>Ethnicity</td>
+<td>Derived from  level 4 codes</td>
+<td><div>https://standards.digital.health.nz/codesystem/ethnic-group-level-4</div></td>
+</tr>
+<tr>
+<td>countryOfBirth.country</td>
+<td>http://hl7.org/fhir/ValueSet/iso3166-1-2</td>
+<td></td><td></td><td>This ValueSet not defined in this IG</td>
+</tr>
+<tr>
+<td>countryOfBirth.source</td>
+<td>https://standards.digital.health.nz/fhir/ValueSet/informationsource</td>
+<td>Information source</td>
+<td>Where the data in the element was sourced from</td>
+<td><div>https://standards.digital.health.nz/fhir/ValueSet/informationsource</div></td>
+</tr>
+<tr>
+<td>nzcitizenship.status</td>
+<td>https://standards.digital.health.nz/fhir/ValueSet/citizenshipstatus</td>
+<td>Citizenship status</td>
+<td>The current citizenship status of the person</td>
+<td><div>https://standards.digital.health.nz/fhir/cs/citizenshipstatus</div></td>
+</tr>
+<tr>
+<td>nzcitizenship.source</td>
+<td>https://standards.digital.health.nz/fhir/ValueSet/informationsource</td>
+<td>Information source</td>
+<td>Where the data in the element was sourced from</td>
+<td><div>https://standards.digital.health.nz/fhir/ValueSet/informationsource</div></td>
+</tr>
+<tr>
+<td>DHB</td>
+<td>https://standards.digital.health.nz/fhir/ValueSet/dhb</td>
+<td>DHB</td>
+<td>The DHB that is responsible for people at this address</td>
+<td><div>https://standards.digital.health.nz/fhir/cs/dhb</div></td>
+</tr>
+<tr>
+<td>iwi</td>
+<td>https://standards.digital.health.nz/fhir/ValueSet/iwi</td>
+<td>Iwi</td>
+<td>TThe Iwi (or tribe) that this person is part of</td>
+<td><div>https://standards.digital.health.nz/fhir/cs/iwi</div></td>
+</tr>
+<tr>
+<td>maoriDescent</td>
+<td>https://standards.digital.health.nz/fhir/ValueSet/maoridescent</td>
+<td>Maori descent</td>
+<td>Is the person of maori descent</td>
+<td><div>https://standards.digital.health.nz/fhir/cs/maoridescent</div></td>
+</tr>
+</table>
+<h5> Summary by ValueSet </h5>
+<table class='table table-condensed table-bordered'>
+
+<tr><th>Url</th><th>elements</th></tr>
+<tr>
+<td>https://standards.digital.health.nz/fhir/ValueSet/addressnotvalidatedreason</td>
+<td>
+<div>address.notValidatedReason</div>
+</td>
+</tr>
+<tr>
+<td>https://standards.digital.health.nz/fhir/ValueSet/citizenshipstatus</td>
+<td>
+<div>nzcitizenship.status</div>
+</td>
+</tr>
+<tr>
+<td>https://standards.digital.health.nz/fhir/ValueSet/dhb</td>
+<td>
+<div>DHB</div>
+</td>
+</tr>
+<tr>
+<td>https://standards.digital.health.nz/fhir/ValueSet/domicilecode</td>
+<td>
+<div>address.derivedData.domicileCode</div>
+</td>
+</tr>
+<tr>
+<td>https://standards.digital.health.nz/fhir/ValueSet/ethnicity</td>
+<td>
+<div>ethnicity</div>
+</td>
+</tr>
+<tr>
+<td>https://standards.digital.health.nz/fhir/ValueSet/iwi</td>
+<td>
+<div>iwi</div>
+</td>
+</tr>
+<tr>
+<td>https://standards.digital.health.nz/fhir/ValueSet/informationsource</td>
+<td>
+<div>name.source</div>
+<div>birthDate.source</div>
+<div>dateOfDeath.source</div>
+<div>countryOfBirth.source</div>
+<div>nzcitizenship.source</div>
+</td>
+</tr>
+<tr>
+<td>https://standards.digital.health.nz/fhir/ValueSet/maoridescent</td>
+<td>
+<div>maoriDescent</div>
+</td>
+</tr>
+</table>
+</div>

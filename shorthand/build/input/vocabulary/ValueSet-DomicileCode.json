@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "DomicileCode",
+  "id": "DomicileCode",
+  "title": "Domicile  Code",
+  "description": "A code for the area within which an address is located",
+  "version": "0.1.0",
+  "url": "https://standards.digital.health.nz/fhir/ValueSet/domicilecode",
+  "compose": {
+    "include": [
+      {
+        "system": "https://standards.digital.health.nz/fhir/cs/domicilecode"
+      }
+    ]
+  }
+}

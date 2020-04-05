@@ -1,0 +1,21 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "CitizenshipStatus",
+  "id": "CitizenshipStatus",
+  "title": "The current citizenship status of the person",
+  "description": "The current citizenship status of the person",
+  "version": "0.1.0",
+  "url": "https://standards.digital.health.nz/fhir/cs/citizenshipstatus",
+  "concept": [
+    {
+      "code": "CIT",
+      "display": "A citizen on New Zealand"
+    },
+    {
+      "code": "NOCIT",
+      "display": "Not a citizen on New Zealand"
+    }
+  ]
+}

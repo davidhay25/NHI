@@ -1,0 +1,1 @@
+{"resourceType":"CodeSystem","id":"aliasType","status":"draft","name":"aliasType","title":"aliasType","description":"The type of alias","content":"complete","url":"http://standards.digital.health.nz/fhir/CodeSystem/aliasType","concept":[{"code":"abbr","display":"Abbreviation"},{"code":"maori","display":"Maori name"}]}

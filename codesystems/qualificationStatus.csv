@@ -1,0 +1,10 @@
+﻿qualificationStatus,
+http://standards.digital.health.nz/fhir/CodeSystem/qualificationStatus,
+http://standards.digital.health.nz/fhir/ValueSet/qualificationStatus,
+qualificationStatus,
+The status of the qualification,
+,
+current,Current
+inactive,Inactive
+removed,Removed
+suspended,Suspended

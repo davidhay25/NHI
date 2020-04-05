@@ -1,0 +1,590 @@
+{
+  "resourceType": "Bundle",
+  "id": "b0b90167-d922-40e4-b9fc-06a99090b3dc",
+  "meta": {
+    "lastUpdated": "2020-01-16T20:18:22.898+00:00"
+  },
+  "type": "searchset",
+  "total": 18,
+  "link": [
+    {
+      "relation": "self",
+      "url": "http://home.clinfhir.com:8054/baseR4/NamingSystem?_count=100"
+    }
+  ],
+  "entry": [
+    {
+      "fullUrl": "http://home.clinfhir.com:8054/baseR4/NamingSystem/nznc",
+      "resource": {
+        "resourceType": "NamingSystem",
+        "id": "nznc",
+        "meta": {
+          "versionId": "3",
+          "lastUpdated": "2019-11-05T21:39:55.492+00:00"
+        },
+        "name": "NZNursingCouncil",
+        "status": "draft",
+        "kind": "identifier",
+        "date": "2019-09-27",
+        "description": "Nursing Council of New Zealand Register Number ",
+        "usage": "Used in the Practitioner resource",
+        "uniqueId": [
+          {
+            "type": "uri",
+            "value": "https://standards.digital.health.nz/id/nursing-council-person",
+            "preferred": true
+          },
+          {
+            "type": "other",
+            "value": "G00008-K",
+            "comment": "Used by the HPI prior to the FHIR implementation"
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      },
+      "response": {
+        "status": "200 OK",
+        "etag": "W/\"3\""
+      }
+    },
+    {
+      "fullUrl": "http://home.clinfhir.com:8054/baseR4/NamingSystem/nzmc",
+      "resource": {
+        "resourceType": "NamingSystem",
+        "id": "nzmc",
+        "meta": {
+          "versionId": "4",
+          "lastUpdated": "2019-11-05T21:39:54.244+00:00"
+        },
+        "name": "NZMedicalCouncil",
+        "status": "draft",
+        "kind": "identifier",
+        "date": "2019-09-27",
+        "description": "Medical Council of New Zealand Register Numbe",
+        "usage": "Used in the Practitioner resource",
+        "uniqueId": [
+          {
+            "type": "uri",
+            "value": "https://standards.digital.health.nz/id/medical-council-person",
+            "preferred": true
+          },
+          {
+            "type": "other",
+            "value": "G00001-G",
+            "comment": "Used by the HPI prior to the FHIR implementation"
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      },
+      "response": {
+        "status": "200 OK",
+        "etag": "W/\"4\""
+      }
+    },
+    {
+      "fullUrl": "http://home.clinfhir.com:8054/baseR4/NamingSystem/nzmwc",
+      "resource": {
+        "resourceType": "NamingSystem",
+        "id": "nzmwc",
+        "meta": {
+          "versionId": "3",
+          "lastUpdated": "2019-11-05T21:39:54.868+00:00"
+        },
+        "name": "NZMidwiferyCouncil",
+        "status": "draft",
+        "kind": "identifier",
+        "date": "2019-09-27",
+        "description": "Midwifery Council Register Number",
+        "usage": "Used in the Practitioner resource",
+        "uniqueId": [
+          {
+            "type": "uri",
+            "value": "https://standards.digital.health.nz/id/midwifery-council-person",
+            "preferred": true
+          },
+          {
+            "type": "other",
+            "value": "G00009-A",
+            "comment": "Used by the HPI prior to the FHIR implementation"
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      },
+      "response": {
+        "status": "200 OK",
+        "etag": "W/\"3\""
+      }
+    },
+    {
+      "fullUrl": "http://home.clinfhir.com:8054/baseR4/NamingSystem/hpi-cpn",
+      "resource": {
+        "resourceType": "NamingSystem",
+        "id": "hpi-cpn",
+        "meta": {
+          "versionId": "3",
+          "lastUpdated": "2019-11-06T17:38:57.903+00:00"
+        },
+        "name": "HPIPerson",
+        "status": "draft",
+        "kind": "identifier",
+        "date": "2019-09-27",
+        "description": "HPI Provider identifier system. Also known as the HPI_CPN (Common Person Number)",
+        "usage": "Used in the Practitioner resource",
+        "uniqueId": [
+          {
+            "type": "uri",
+            "value": "https://standards.digital.health.nz/id/hpi-person",
+            "preferred": true
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      },
+      "response": {
+        "status": "200 OK",
+        "etag": "W/\"3\""
+      }
+    },
+    {
+      "fullUrl": "http://home.clinfhir.com:8054/baseR4/NamingSystem/hpi-fac",
+      "resource": {
+        "resourceType": "NamingSystem",
+        "id": "hpi-fac",
+        "meta": {
+          "versionId": "2",
+          "lastUpdated": "2019-11-05T20:45:29.834+00:00"
+        },
+        "name": "HPIFacility",
+        "status": "draft",
+        "kind": "identifier",
+        "date": "2019-09-27",
+        "description": "The New Zealand HPI Facility identifier system.",
+        "usage": "Used in the Location resource",
+        "uniqueId": [
+          {
+            "type": "uri",
+            "value": "https://standards.digital.health.nz/id/hpi-facility",
+            "preferred": true
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      },
+      "response": {
+        "status": "200 OK",
+        "etag": "W/\"2\""
+      }
+    },
+    {
+      "fullUrl": "http://home.clinfhir.com:8054/baseR4/NamingSystem/hpi-org",
+      "resource": {
+        "resourceType": "NamingSystem",
+        "id": "hpi-org",
+        "meta": {
+          "versionId": "3",
+          "lastUpdated": "2019-11-06T17:39:03.889+00:00"
+        },
+        "name": "HPIOrganization",
+        "status": "draft",
+        "kind": "identifier",
+        "date": "2019-09-27",
+        "description": "HPI Organization identifier system.",
+        "usage": "Used in the Organization resource",
+        "uniqueId": [
+          {
+            "type": "uri",
+            "value": "https://standards.digital.health.nz/id/hpi-organisation",
+            "preferred": true
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      },
+      "response": {
+        "status": "200 OK",
+        "etag": "W/\"3\""
+      }
+    },
+    {
+      "fullUrl": "http://home.clinfhir.com:8054/baseR4/NamingSystem/hpi-chiro",
+      "resource": {
+        "resourceType": "NamingSystem",
+        "id": "hpi-chiro",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2019-11-05T20:55:17.817+00:00"
+        },
+        "name": "HPIChirprcactic",
+        "status": "draft",
+        "kind": "identifier",
+        "date": "2019-09-27",
+        "description": "Chiropractic Board Register number.",
+        "usage": "Used in the Practitioner resource",
+        "uniqueId": [
+          {
+            "type": "uri",
+            "value": "https://standards.digital.health.nz/id/Chiropractic-Board-person",
+            "preferred": true
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      },
+      "response": {
+        "status": "201 Created",
+        "etag": "W/\"1\""
+      }
+    },
+    {
+      "fullUrl": "http://home.clinfhir.com:8054/baseR4/NamingSystem/hpi-dental",
+      "resource": {
+        "resourceType": "NamingSystem",
+        "id": "hpi-dental",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2019-11-05T20:55:19.254+00:00"
+        },
+        "name": "HPIDental",
+        "status": "draft",
+        "kind": "identifier",
+        "date": "2019-09-27",
+        "description": "Dental Council Register Number .",
+        "usage": "Used in the Practitioner resource",
+        "uniqueId": [
+          {
+            "type": "uri",
+            "value": "https://standards.digital.health.nz/id/dental-council-person",
+            "preferred": true
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      },
+      "response": {
+        "status": "201 Created",
+        "etag": "W/\"1\""
+      }
+    },
+    {
+      "fullUrl": "http://home.clinfhir.com:8054/baseR4/NamingSystem/hpi-diet",
+      "resource": {
+        "resourceType": "NamingSystem",
+        "id": "hpi-diet",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2019-11-05T20:55:19.868+00:00"
+        },
+        "name": "HPIDiet",
+        "status": "draft",
+        "kind": "identifier",
+        "date": "2019-09-27",
+        "description": "Dietitians Board Register Number .",
+        "usage": "Used in the Practitioner resource",
+        "uniqueId": [
+          {
+            "type": "uri",
+            "value": "https://standards.digital.health.nz/id/dietitians-board-person",
+            "preferred": true
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      },
+      "response": {
+        "status": "201 Created",
+        "etag": "W/\"1\""
+      }
+    },
+    {
+      "fullUrl": "http://home.clinfhir.com:8054/baseR4/NamingSystem/hpi-medlab",
+      "resource": {
+        "resourceType": "NamingSystem",
+        "id": "hpi-medlab",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2019-11-05T21:39:48.008+00:00"
+        },
+        "name": "HPIMedLab",
+        "status": "draft",
+        "kind": "identifier",
+        "date": "2019-09-27",
+        "description": "Medical Laboratory Science Board Register Number .",
+        "usage": "Used in the Practitioner resource",
+        "uniqueId": [
+          {
+            "type": "uri",
+            "value": "https://standards.digital.health.nz/id/medical-laboratory-science-board-person",
+            "preferred": true
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      },
+      "response": {
+        "status": "201 Created",
+        "etag": "W/\"1\""
+      }
+    },
+    {
+      "fullUrl": "http://home.clinfhir.com:8054/baseR4/NamingSystem/hpi-occ",
+      "resource": {
+        "resourceType": "NamingSystem",
+        "id": "hpi-occ",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2019-11-05T21:39:48.729+00:00"
+        },
+        "name": "NZOccupationalTherapy",
+        "status": "draft",
+        "kind": "identifier",
+        "date": "2019-09-27",
+        "description": "Occupational Therapy Board Register Number ",
+        "usage": "Used in the Practitioner resource",
+        "uniqueId": [
+          {
+            "type": "uri",
+            "value": "https://standards.digital.health.nz/id/occupational-therapy-board-person",
+            "preferred": true
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      },
+      "response": {
+        "status": "201 Created",
+        "etag": "W/\"1\""
+      }
+    },
+    {
+      "fullUrl": "http://home.clinfhir.com:8054/baseR4/NamingSystem/hpi-osteo",
+      "resource": {
+        "resourceType": "NamingSystem",
+        "id": "hpi-osteo",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2019-11-05T21:39:50.567+00:00"
+        },
+        "name": "NZOsteo",
+        "status": "draft",
+        "kind": "identifier",
+        "date": "2019-09-27",
+        "description": "Osteopathic Council Register Number ",
+        "usage": "Used in the Practitioner resource",
+        "uniqueId": [
+          {
+            "type": "uri",
+            "value": "https://standards.digital.health.nz/id/osteopathic-council-person",
+            "preferred": true
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      },
+      "response": {
+        "status": "201 Created",
+        "etag": "W/\"1\""
+      }
+    },
+    {
+      "fullUrl": "http://home.clinfhir.com:8054/baseR4/NamingSystem/hpi-pharmacy",
+      "resource": {
+        "resourceType": "NamingSystem",
+        "id": "hpi-pharmacy",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2019-11-05T21:39:51.190+00:00"
+        },
+        "name": "NZPharmacy",
+        "status": "draft",
+        "kind": "identifier",
+        "date": "2019-09-27",
+        "description": "Pharmacy Council of New Zealand Register Number ",
+        "usage": "Used in the Practitioner resource",
+        "uniqueId": [
+          {
+            "type": "uri",
+            "value": "https://standards.digital.health.nz/id/pharmacy-council-person",
+            "preferred": true
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      },
+      "response": {
+        "status": "201 Created",
+        "etag": "W/\"1\""
+      }
+    },
+    {
+      "fullUrl": "http://home.clinfhir.com:8054/baseR4/NamingSystem/hpi-physio",
+      "resource": {
+        "resourceType": "NamingSystem",
+        "id": "hpi-physio",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2019-11-05T21:39:51.798+00:00"
+        },
+        "name": "NZPhysio",
+        "status": "draft",
+        "kind": "identifier",
+        "date": "2019-09-27",
+        "description": "Physiotherapy Board Register Number",
+        "usage": "Used in the Practitioner resource",
+        "uniqueId": [
+          {
+            "type": "uri",
+            "value": "https://standards.digital.health.nz/id/physiotherapy-board-person",
+            "preferred": true
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      },
+      "response": {
+        "status": "201 Created",
+        "etag": "W/\"1\""
+      }
+    },
+    {
+      "fullUrl": "http://home.clinfhir.com:8054/baseR4/NamingSystem/hpi-podiatry",
+      "resource": {
+        "resourceType": "NamingSystem",
+        "id": "hpi-podiatry",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2019-11-05T21:39:52.418+00:00"
+        },
+        "name": "NZPodiatry",
+        "status": "draft",
+        "kind": "identifier",
+        "date": "2019-09-27",
+        "description": "Podiatrists Board Register Number ",
+        "usage": "Used in the Practitioner resource",
+        "uniqueId": [
+          {
+            "type": "uri",
+            "value": "https://standards.digital.health.nz/id/podiatrists-board-person",
+            "preferred": true
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      },
+      "response": {
+        "status": "201 Created",
+        "etag": "W/\"1\""
+      }
+    },
+    {
+      "fullUrl": "http://home.clinfhir.com:8054/baseR4/NamingSystem/hpi-psychologist",
+      "resource": {
+        "resourceType": "NamingSystem",
+        "id": "hpi-psychologist",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2019-11-05T21:39:53.032+00:00"
+        },
+        "name": "NZPsychologist",
+        "status": "draft",
+        "kind": "identifier",
+        "date": "2019-09-27",
+        "description": "Psychologists Board Register Number ",
+        "usage": "Used in the Practitioner resource",
+        "uniqueId": [
+          {
+            "type": "uri",
+            "value": "https://standards.digital.health.nz/id/psychologists-board-person",
+            "preferred": true
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      },
+      "response": {
+        "status": "201 Created",
+        "etag": "W/\"1\""
+      }
+    },
+    {
+      "fullUrl": "http://home.clinfhir.com:8054/baseR4/NamingSystem/hpi-radtech",
+      "resource": {
+        "resourceType": "NamingSystem",
+        "id": "hpi-radtech",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2019-11-05T21:39:53.645+00:00"
+        },
+        "name": "NZRadioTechnician",
+        "status": "draft",
+        "kind": "identifier",
+        "date": "2019-09-27",
+        "description": "Medical Radiation Technologists Board Register Number ",
+        "usage": "Used in the Practitioner resource",
+        "uniqueId": [
+          {
+            "type": "uri",
+            "value": "https://standards.digital.health.nz/id/medical-radiation-technologists-board-person",
+            "preferred": true
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      },
+      "response": {
+        "status": "201 Created",
+        "etag": "W/\"1\""
+      }
+    },
+    {
+      "fullUrl": "http://home.clinfhir.com:8054/baseR4/NamingSystem/hpi-optician",
+      "resource": {
+        "resourceType": "NamingSystem",
+        "id": "hpi-optician",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2019-11-05T21:42:09.819+00:00"
+        },
+        "name": "NZOptitian",
+        "status": "draft",
+        "kind": "identifier",
+        "date": "2019-09-27",
+        "description": "Optometrists & Dispensing Opticians Board Register Number ",
+        "usage": "Used in the Practitioner resource",
+        "uniqueId": [
+          {
+            "type": "uri",
+            "value": "https://standards.digital.health.nz/id/optometrists-dispensing-opticians-board-person",
+            "preferred": true
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      },
+      "response": {
+        "status": "201 Created",
+        "etag": "W/\"1\""
+      }
+    }
+  ]
+}

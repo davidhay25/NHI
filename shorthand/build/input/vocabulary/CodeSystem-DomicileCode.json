@@ -1,0 +1,29 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "DomicileCode",
+  "id": "DomicileCode",
+  "title": "The source of the information",
+  "description": "Codes used to define where information came from",
+  "version": "0.1.0",
+  "url": "https://standards.digital.health.nz/fhir/cs/domicilecode",
+  "concept": [
+    {
+      "code": "3240",
+      "display": "Inlet - Hokianga Harbour"
+    },
+    {
+      "code": "1063",
+      "display": "Parkdale"
+    },
+    {
+      "code": "3241",
+      "display": "Inlet - Rangaunu Harbour"
+    },
+    {
+      "code": "1062",
+      "display": "Paraonui"
+    }
+  ]
+}

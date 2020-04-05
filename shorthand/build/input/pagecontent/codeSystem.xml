@@ -1,0 +1,193 @@
+<div xmlns="http://www.w3.org/1999/xhtml">
+<h4>AddressNotValidatedReason</h4>
+<div class='row'>
+<div class='col-6'>
+<strong>https://standards.digital.health.nz/fhir/cs/addressnotvalidatedreason</strong>
+</div>
+<div class='col-6'>
+<em>Codes used to define where information came from</em>
+</div>
+</div>
+<table class='table table-condensed table-bordered'>
+
+<tr><th width='15%'>Code</th><th>Display</th></tr>
+<tr>
+<td>UKWN</td>
+<td>Address unknown</td>
+</tr>
+<tr>
+<td>NOSVC</td>
+<td>Address service unavailable</td>
+</tr>
+<tr>
+<td>OTHER</td>
+<td>Other</td>
+</tr>
+<tr>
+<td>NFAB</td>
+<td>No fixed abode</td>
+</tr>
+<tr>
+<td>OSEA</td>
+<td>Overseas address</td>
+</tr>
+</table>
+<h4>CitizenshipStatus</h4>
+<div class='row'>
+<div class='col-6'>
+<strong>https://standards.digital.health.nz/fhir/cs/citizenshipstatus</strong>
+</div>
+<div class='col-6'>
+<em>The current citizenship status of the person</em>
+</div>
+</div>
+<table class='table table-condensed table-bordered'>
+
+<tr><th width='15%'>Code</th><th>Display</th></tr>
+<tr>
+<td>CIT</td>
+<td>A citizen on New Zealand</td>
+</tr>
+<tr>
+<td>NOCIT</td>
+<td>Not a citizen on New Zealand</td>
+</tr>
+</table>
+<h4>DHB</h4>
+<div class='row'>
+<div class='col-6'>
+<strong>https://standards.digital.health.nz/fhir/cs/dhb</strong>
+</div>
+<div class='col-6'>
+<em>The DHB that is responsible for people at this address</em>
+</div>
+</div>
+<table class='table table-condensed table-bordered'>
+
+<tr><th width='15%'>Code</th><th>Display</th></tr>
+<tr>
+<td>AUCK</td>
+<td>Auckland</td>
+</tr>
+<tr>
+<td>BOP</td>
+<td>Bay Of Plenty</td>
+</tr>
+<tr>
+<td>CMDHB</td>
+<td>Counties Manukau</td>
+</tr>
+</table>
+<h4>DomicileCode</h4>
+<div class='row'>
+<div class='col-6'>
+<strong>https://standards.digital.health.nz/fhir/cs/domicilecode</strong>
+</div>
+<div class='col-6'>
+<em>Codes used to define where information came from</em>
+</div>
+</div>
+<table class='table table-condensed table-bordered'>
+
+<tr><th width='15%'>Code</th><th>Display</th></tr>
+<tr>
+<td>3240</td>
+<td>Inlet - Hokianga Harbour</td>
+</tr>
+<tr>
+<td>1063</td>
+<td>Parkdale</td>
+</tr>
+<tr>
+<td>3241</td>
+<td>Inlet - Rangaunu Harbour</td>
+</tr>
+<tr>
+<td>1062</td>
+<td>Paraonui</td>
+</tr>
+</table>
+<h4>IWI</h4>
+<div class='row'>
+<div class='col-6'>
+<strong>https://standards.digital.health.nz/fhir/cs/iwi</strong>
+</div>
+<div class='col-6'>
+<em>TThe Iwi (or tribe) that this person is part of</em>
+</div>
+</div>
+<table class='table table-condensed table-bordered'>
+
+<tr><th width='15%'>Code</th><th>Display</th></tr>
+<tr>
+<td>NPI</td>
+<td>Ngāpuhi</td>
+</tr>
+<tr>
+<td>TERO</td>
+<td>Te Roroa</td>
+</tr>
+<tr>
+<td>NWAI</td>
+<td>Ngāti Wai</td>
+</tr>
+</table>
+<h4>InformationSource</h4>
+<div class='row'>
+<div class='col-6'>
+<strong>https://standards.digital.health.nz/fhir/cs/informationsource</strong>
+</div>
+<div class='col-6'>
+<em>Codes used to define where information came from</em>
+</div>
+</div>
+<table class='table table-condensed table-bordered'>
+
+<tr><th width='15%'>Code</th><th>Display</th></tr>
+<tr>
+<td>MIGR</td>
+<td>Migrated</td>
+</tr>
+<tr>
+<td>BREG</td>
+<td>Birth Register</td>
+</tr>
+<tr>
+<td>HL7</td>
+<td> HL7 applied</td>
+</tr>
+<tr>
+<td>PPRT</td>
+<td>Passport</td>
+</tr>
+</table>
+<h4>MaoriDescent</h4>
+<div class='row'>
+<div class='col-6'>
+<strong>https://standards.digital.health.nz/fhir/cs/maoridescent</strong>
+</div>
+<div class='col-6'>
+<em>Is the person of maori descent</em>
+</div>
+</div>
+<table class='table table-condensed table-bordered'>
+
+<tr><th width='15%'>Code</th><th>Display</th></tr>
+<tr>
+<td>YES</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>NO</td>
+<td>No</td>
+</tr>
+<tr>
+<td>UNK</td>
+<td>Unknown</td>
+</tr>
+<tr>
+<td>NA</td>
+<td>Not answered</td>
+</tr>
+</table>
+</div>

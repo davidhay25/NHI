@@ -1,0 +1,11 @@
+﻿addressnotvalidated,
+http://standards.digital.health.nz/fhir/CodeSystem/addressnotvalidated,
+http://standards.digital.health.nz/fhir/ValueSet/addressnotvalidated,
+Address Not Validated reason,
+The reason why the address was not validated,
+,
+OSEA,Overseas address
+UKWN,Address unknown
+NFAB,No fixed abode
+NOSVC,Address service unavailable
+OTHER,Other

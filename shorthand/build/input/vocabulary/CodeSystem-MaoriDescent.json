@@ -1,0 +1,29 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "MaoriDescent",
+  "id": "MaoriDescent",
+  "title": "Is the person of maori descent",
+  "description": "Is the person of maori descent",
+  "version": "0.1.0",
+  "url": "https://standards.digital.health.nz/fhir/cs/maoridescent",
+  "concept": [
+    {
+      "code": "YES",
+      "display": "Yes"
+    },
+    {
+      "code": "NO",
+      "display": "No"
+    },
+    {
+      "code": "UNK",
+      "display": "Unknown"
+    },
+    {
+      "code": "NA",
+      "display": "Not answered"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+﻿aliasType,
+http://standards.digital.health.nz/fhir/CodeSystem/aliasType,
+http://standards.digital.health.nz/fhir/ValueSet/aliasType,
+aliasType,
+The type of alias,
+,
+abbr,Abbreviation
+maori,Maori name

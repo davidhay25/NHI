@@ -1,0 +1,11 @@
+{
+  "resourceType": "Practitioner",
+  "id": "drmulti",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "https://standards.digital.health.nz/id/cpn",
+      "value": "98ZZA"
+    }
+  ]
+}

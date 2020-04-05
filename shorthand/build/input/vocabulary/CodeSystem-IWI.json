@@ -1,0 +1,25 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "IWI",
+  "id": "IWI",
+  "title": "The Iwi (or tribe) that this person is part of",
+  "description": "TThe Iwi (or tribe) that this person is part of",
+  "version": "0.1.0",
+  "url": "https://standards.digital.health.nz/fhir/cs/iwi",
+  "concept": [
+    {
+      "code": "NPI",
+      "display": "Ngāpuhi"
+    },
+    {
+      "code": "TERO",
+      "display": "Te Roroa"
+    },
+    {
+      "code": "NWAI",
+      "display": "Ngāti Wai"
+    }
+  ]
+}
