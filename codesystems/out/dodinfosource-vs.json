@@ -1,1 +1,0 @@
-{"resourceType":"ValueSet","id":"dodinfosource","status":"draft","name":"dodinfosource","title":"Date of death information source","description":"The source that the date of death was sourced from","url":"http://standards.digital.health.nz/fhir/ValueSet/dodinfosource","compose":{"include":[{"system":"http://standards.digital.health.nz/fhir/CodeSystem/dodinfosource"}]}}

@@ -5,4 +5,4 @@ Description: "The reason why the address has not been validated"
 
 * extension 0..0
 * value[x] only CodeableConcept
-* valueCodeableConcept from http://standards.digital.health.nz/fhir/ValueSet/addressnotvalidated (preferred)
+* valueCodeableConcept from https://standards.digital.health.nz/fhir/ValueSet/addressnotvalidatedreason (preferred)

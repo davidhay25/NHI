@@ -1,7 +1,7 @@
-﻿dhb,
-http://standards.digital.health.nz/fhir/CodeSystem/dhb,
-http://standards.digital.health.nz/fhir/ValueSet/dhb,
-dhb,
+﻿DHB,
+https://standards.digital.health.nz/fhir/cs/dhb,
+https://standards.digital.health.nz/fhir/ValueSet/dhb,
+DHB,
 New Zealand DHBs,
 ,
 adhb,Auckland District Health Board

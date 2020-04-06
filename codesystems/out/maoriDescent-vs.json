@@ -1,1 +1,0 @@
-{"resourceType":"ValueSet","id":"maoriDescent","status":"draft","name":"maoriDescent","title":"Maori Descent","description":"Is the person of maori descent","url":"http://standards.digital.health.nz/fhir/ValueSet/maoriDescent","compose":{"include":[{"system":"http://standards.digital.health.nz/fhir/CodeSystem/maoriDescent"}]}}

@@ -1,1 +1,0 @@
-{"resourceType":"ValueSet","id":"qualificationStatus","status":"draft","name":"qualificationStatus","title":"qualificationStatus","description":"The status of the qualification","url":"http://standards.digital.health.nz/fhir/ValueSet/qualificationStatus","compose":{"include":[{"system":"http://standards.digital.health.nz/fhir/CodeSystem/qualificationStatus"}]}}

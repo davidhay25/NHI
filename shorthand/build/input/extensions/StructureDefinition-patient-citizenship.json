@@ -68,7 +68,7 @@
         "path": "Extension.extension.valueCodeableConcept",
         "binding": {
           "strength": "preferred",
-          "valueSet": "http://standards.digital.health.nz/valueset/nzCitizenship"
+          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/citizenshipstatus"
         }
       },
       {
@@ -112,7 +112,7 @@
         "path": "Extension.extension.valueCodeableConcept",
         "binding": {
           "strength": "preferred",
-          "valueSet": "http://standards.digital.health.nz/fhir/ValueSet/nzinfosource"
+          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/informationsource"
         }
       },
       {

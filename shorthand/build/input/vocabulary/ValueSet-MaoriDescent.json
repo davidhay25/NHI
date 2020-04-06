@@ -3,15 +3,8 @@
   "status": "active",
   "name": "MaoriDescent",
   "id": "MaoriDescent",
-  "title": "Maori descent",
+  "title": "Maori Descent",
   "description": "Is the person of maori descent",
   "version": "0.1.0",
-  "url": "https://standards.digital.health.nz/fhir/ValueSet/maoridescent",
-  "compose": {
-    "include": [
-      {
-        "system": "https://standards.digital.health.nz/fhir/cs/maoridescent"
-      }
-    ]
-  }
+  "url": "https://standards.digital.health.nz/fhir/cs/maoriDescent"
 }

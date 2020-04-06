@@ -11,9 +11,9 @@ Description: "New Zealand citizenship"
 * extension[status].url = "status" (exactly)
 * extension[status] ^definition = "No description"
 * extension[status].value[x] only CodeableConcept
-* extension[status].valueCodeableConcept from http://standards.digital.health.nz/valueset/nzCitizenship (preferred)
+* extension[status].valueCodeableConcept from https://standards.digital.health.nz/fhir/ValueSet/citizenshipstatus (preferred)
 
 * extension[source].url = "source" (exactly)
 * extension[source] ^definition = "No description"
 * extension[source].value[x] only CodeableConcept
-* extension[source].valueCodeableConcept from http://standards.digital.health.nz/fhir/ValueSet/nzinfosource (preferred)
+* extension[source].valueCodeableConcept from https://standards.digital.health.nz/fhir/ValueSet/informationsource (preferred)

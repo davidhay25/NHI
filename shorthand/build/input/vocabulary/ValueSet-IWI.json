@@ -1,17 +1,10 @@
 {
   "resourceType": "ValueSet",
   "status": "active",
-  "name": "IWI",
-  "id": "IWI",
+  "name": "Iwi",
+  "id": "Iwi",
   "title": "Iwi",
-  "description": "TThe Iwi (or tribe) that this person is part of",
+  "description": "New Zealand iwi codes",
   "version": "0.1.0",
-  "url": "https://standards.digital.health.nz/fhir/ValueSet/iwi",
-  "compose": {
-    "include": [
-      {
-        "system": "https://standards.digital.health.nz/fhir/cs/iwi"
-      }
-    ]
-  }
+  "url": "https://standards.digital.health.nz/fhir/cs/iwi"
 }

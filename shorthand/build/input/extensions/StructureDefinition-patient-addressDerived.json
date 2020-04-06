@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "name": "Patient_addressDerived",
   "status": "active",
-  "description": "Additional address elements exposed by the NHI and calculated from the address",
+  "description": "Additional address elements exposed by the NHI and calculated from the address using the eSAM address service",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -27,6 +27,58 @@
   "derivation": "constraint",
   "differential": {
     "element": [
+      {
+        "id": "Extension.extension:latitude",
+        "path": "Extension.extension",
+        "sliceName": "latitude",
+        "definition": "The latitude of the address - derived from the eSAM service, which uses an NZ specific datum",
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:latitude.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:latitude.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "latitude"
+      },
+      {
+        "id": "Extension.extension:latitude.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:longitude",
+        "path": "Extension.extension",
+        "sliceName": "longitude",
+        "definition": "The longitude of the address - derived from the eSAM service, which uses an NZ specific datum",
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:longitude.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:longitude.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "longitude"
+      },
+      {
+        "id": "Extension.extension:longitude.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ]
+      },
       {
         "id": "Extension.extension:meshblock",
         "path": "Extension.extension",
@@ -146,7 +198,7 @@
         "path": "Extension.extension.valueCodeableConcept",
         "binding": {
           "strength": "preferred",
-          "valueSet": "http://standards.digital.health.nz/fhir/ValueSet/nzdomcode"
+          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/domicilecode"
         }
       },
       {

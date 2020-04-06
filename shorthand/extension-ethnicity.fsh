@@ -5,4 +5,4 @@ Description: "The ethnicity of the patient. One to six level 4 codes."
 
 * extension 0..0
 * value[x] only CodeableConcept
-* valueCodeableConcept from http://standards.digital.health.nz/valueset/ethnic-group-level-4 (preferred)
+* valueCodeableConcept from https://standards.digital.health.nz/fhir/ValueSet/ethnicity (preferred)

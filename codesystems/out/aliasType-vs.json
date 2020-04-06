@@ -1,1 +1,0 @@
-{"resourceType":"ValueSet","id":"aliasType","status":"draft","name":"aliasType","title":"aliasType","description":"The type of alias","url":"http://standards.digital.health.nz/fhir/ValueSet/aliasType","compose":{"include":[{"system":"http://standards.digital.health.nz/fhir/CodeSystem/aliasType"}]}}

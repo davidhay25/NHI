@@ -1,20 +1,21 @@
 
-//Extension urls...
+//Extension urls defined in this IG...
 Alias: $patient-citizenship = http://hl7.org.nz/fhir/StructureDefinition/patient-citizenship
 Alias: $dhb = http://hl7.org.nz/fhir/StructureDefinition/dhb
-Alias: $patient-birthPlace = http://hl7.org.nz/fhir/StructureDefinition/patient-birthPlace
-Alias: $patient-maoriDescent = http://hl7.org.nz/fhir/StructureDefinition/patient-maoriDescent
+Alias: $patient-countryOfBirth = http://hl7.org.nz/fhir/StructureDefinition/patient-countryOfBirth
+Alias: $suburb = http://hl7.org.nz/fhir/StructureDefinition/suburb
 Alias: $informationsource = http://hl7.org.nz/fhir/StructureDefinition/informationsource
 Alias: $buildingName = http://hl7.org.nz/fhir/StructureDefinition/buildingName
 Alias: $patient-addressDerived = http://hl7.org.nz/fhir/StructureDefinition/patient-addressDerived
-Alias: $nzGeocode = http://hl7.org.nz/fhir/StructureDefinition/nzGeocode
-Alias: $originalValue = http://hl7.org.nz/fhir/StructureDefinition/originalValue
-Alias: $nzEthnicity = http://hl7.org.nz/fhir/StructureDefinition/nzEthnicity
-Alias: $patient-iwi = http://hl7.org.nz/fhir/StructureDefinition/patient-iwi
+Alias: $originalText = http://hl7.org/fhir/StructureDefinition/originalText
+Alias: $ethnicity = http://hl7.org.nz/fhir/StructureDefinition/ethnicity
+Alias: $notValidatedReason = http://hl7.org.nz/fhir/StructureDefinition/notValidatedReason
+Alias: $isPrimary = http://hl7.org.nz/fhir/StructureDefinition/address-isPrimary
 
+//external extensions that are used
+Alias: $isPreferred = http://hl7.org/fhir/StructureDefinition/iso21090-preferred
 
 Profile:        NhiPatient
-//Parent:         NzPatient
 Parent:         Patient
 Id:             NhiPatient
 Title:          "NHI Patient"
@@ -31,16 +32,15 @@ Description:    "The Patient resource exposed by the NHI."
 * communication 0..0
 * managingOrganization 0..0
 * link 0..0
+* deceasedBoolean 0..0      //only deceasedDateTime is supported - and only the date part... 
 
 
 //root level extensions
 * extension contains
     $patient-citizenship named patient-citizenship 0..1 and
     $dhb named dhb 0..1 and
-    $patient-birthPlace named patient-birthPlace 0..1 and
-    $patient-maoriDescent named patient-maoriDescent 0..1 and
-    $nzEthnicity named nzEthnicity 0..4 and
-    $patient-iwi named patient-iwi 0..1 
+    $patient-countryOfBirth named patient-countryOfBirth 0..1 and
+    $ethnicity named ethnicity 0..4 
 
 //identifier - add  dormant
 * identifier ^slicing.discriminator.type = #value
@@ -60,22 +60,18 @@ Description:    "The Patient resource exposed by the NHI."
    
 //Name is required, and there are extensions for source, and isPreferred
 
-
-// * name.extension contains Informationsource named informationsource 0..1
-
 * name  1..1
 * name.extension contains
-    $informationsource named informationsource 0..1 
+   
+    $informationsource named informationsource 0..1 and
+    $isPreferred named isPreferred 0..1
 
 
 //The gender has an extension for the original text that was used to establish it (eg from a form)
-
 * gender.extension contains 
-    $originalValue named originalValue 0..1
+    $originalText named originalText 0..1
 
 //birthdate is required, and has an extension for source 
-
-
 * birthDate 1..1
 * birthDate.extension contains  
     $informationsource  named informationsource 0..1 
@@ -90,8 +86,10 @@ Description:    "The Patient resource exposed by the NHI."
 * address.line 1..*     //there will always be at least 1 line
 * address.extension contains
     $buildingName named buildingName 0..1 and   //the name of the building - as it is known locally
-    $nzGeocode named nzGeocode 0..1 and      //New Zealand geocode (Uses a NZ specific datum )
-    $patient-addressDerived named patient-addressDerived 0..1     //a set of data derived from the address
+    $suburb named suburb 0..1 and
+    $patient-addressDerived named patient-addressDerived 0..1 and    //a set of data derived from the address
+    $notValidatedReason named notValidatedReason 0..1 and
+    $isPrimary named isPrimary 0..1
 
 //Limit the possible resources for generalPractitioner only to a PractitionerRole
 //Note that this might still be a contained resource - that's still supported by this profile

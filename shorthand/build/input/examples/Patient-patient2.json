@@ -47,80 +47,12 @@
   },
   "extension": [
     {
-      "url": "http://hl7.org.nz/fhir/StructureDefinition/nzEthnicity",
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "system": "https://standards.digital.health.nz/codesystem/ethnic-group-level-4",
-            "code": "9999",
-            "display": "Not Stated"
-          }
-        ]
-      }
-    },
-    {
       "url": "http://hl7.org.nz/fhir/StructureDefinition/dhb",
       "valueCodeableConcept": {
         "coding": [
           {
             "system": "https://standards.digital.health.nz/fhir/ValueSet/dhb",
             "code": "cmdhb"
-          }
-        ]
-      }
-    },
-    {
-      "url": "http://hl7.org.nz/fhir/StructureDefinition/patient-birthPlace",
-      "extension": [
-        {
-          "url": "placeOfBirth",
-          "valueString": "Palmerston North"
-        },
-        {
-          "url": "country",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://hl7.org/fhir/ValueSet/iso3166-1-2",
-                "code": "NZ",
-                "display": "New Zealand"
-              }
-            ]
-          }
-        },
-        {
-          "url": "source",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "http://standards.digital.health.nz/fhir/ValueSet/nzinfosource",
-                "code": "PPRT",
-                "display": "Passport"
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "url": "http://hl7.org.nz/fhir/StructureDefinition/patient-maoriDescent",
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "system": "http://standards.digital.health.nz/fhir/ValueSet/nzmaoridescent",
-            "code": "yes"
-          }
-        ]
-      }
-    },
-    {
-      "url": "http://hl7.org.nz/fhir/StructureDefinition/patient-iwi",
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "system": "http://standards.digital.health.nz/fhir/ValueSet/nziwi",
-            "code": "2001",
-            "display": "Tainui"
           }
         ]
       }

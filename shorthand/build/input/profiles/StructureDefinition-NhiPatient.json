@@ -90,57 +90,29 @@
         ]
       },
       {
-        "id": "Patient.extension:patient-birthPlace",
+        "id": "Patient.extension:patient-countryOfBirth",
         "path": "Patient.extension",
-        "sliceName": "patient-birthPlace",
+        "sliceName": "patient-countryOfBirth",
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/patient-birthPlace"
+              "http://hl7.org.nz/fhir/StructureDefinition/patient-countryOfBirth"
             ]
           }
         ]
       },
       {
-        "id": "Patient.extension:patient-maoriDescent",
+        "id": "Patient.extension:ethnicity",
         "path": "Patient.extension",
-        "sliceName": "patient-maoriDescent",
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/patient-maoriDescent"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Patient.extension:nzEthnicity",
-        "path": "Patient.extension",
-        "sliceName": "nzEthnicity",
+        "sliceName": "ethnicity",
         "max": "4",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/nzEthnicity"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Patient.extension:patient-iwi",
-        "path": "Patient.extension",
-        "sliceName": "patient-iwi",
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/patient-iwi"
+              "http://hl7.org.nz/fhir/StructureDefinition/ethnicity"
             ]
           }
         ]
@@ -217,6 +189,20 @@
         ]
       },
       {
+        "id": "Patient.name.extension:isPreferred",
+        "path": "Patient.name.extension",
+        "sliceName": "isPreferred",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/iso21090-preferred"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Patient.gender.extension",
         "path": "Patient.gender.extension",
         "slicing": {
@@ -231,15 +217,15 @@
         }
       },
       {
-        "id": "Patient.gender.extension:originalValue",
+        "id": "Patient.gender.extension:originalText",
         "path": "Patient.gender.extension",
-        "sliceName": "originalValue",
+        "sliceName": "originalText",
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/originalValue"
+              "http://hl7.org/fhir/StructureDefinition/originalText"
             ]
           }
         ]
@@ -274,6 +260,16 @@
             "profile": [
               "http://hl7.org.nz/fhir/StructureDefinition/informationsource"
             ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.deceasedBoolean",
+        "path": "Patient.deceasedBoolean",
+        "max": "0",
+        "type": [
+          {
+            "code": "boolean"
           }
         ]
       },
@@ -334,15 +330,15 @@
         ]
       },
       {
-        "id": "Patient.address.extension:nzGeocode",
+        "id": "Patient.address.extension:suburb",
         "path": "Patient.address.extension",
-        "sliceName": "nzGeocode",
+        "sliceName": "suburb",
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/nzGeocode"
+              "http://hl7.org.nz/fhir/StructureDefinition/suburb"
             ]
           }
         ]
@@ -357,6 +353,34 @@
             "code": "Extension",
             "profile": [
               "http://hl7.org.nz/fhir/StructureDefinition/patient-addressDerived"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.address.extension:notValidatedReason",
+        "path": "Patient.address.extension",
+        "sliceName": "notValidatedReason",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/notValidatedReason"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.address.extension:isPrimary",
+        "path": "Patient.address.extension",
+        "sliceName": "isPrimary",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/address-isPrimary"
             ]
           }
         ]

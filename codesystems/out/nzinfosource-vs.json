@@ -1,1 +1,0 @@
-{"resourceType":"ValueSet","id":"nzinfosource","status":"draft","name":"nzinfosource","title":"Information source","description":"The source of this data","url":"http://standards.digital.health.nz/fhir/ValueSet/nzinfosource","compose":{"include":[{"system":"http://standards.digital.health.nz/fhir/CodeSystem/nzinfosource"}]}}

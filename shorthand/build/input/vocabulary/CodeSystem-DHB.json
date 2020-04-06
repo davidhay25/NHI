@@ -4,22 +4,90 @@
   "content": "complete",
   "name": "DHB",
   "id": "DHB",
-  "title": "The DHB that is responsible for people at this address",
-  "description": "The DHB that is responsible for people at this address",
+  "title": "DHB",
+  "description": "New Zealand DHBs",
   "version": "0.1.0",
-  "url": "https://standards.digital.health.nz/fhir/cs/dhb",
+  "url": "https://standards.digital.health.nz/fhir/ValueSet/dhb",
   "concept": [
     {
-      "code": "AUCK",
-      "display": "Auckland"
+      "code": "adhb",
+      "display": "Auckland District Health Board"
     },
     {
-      "code": "BOP",
-      "display": "Bay Of Plenty"
+      "code": "bopdhb",
+      "display": "Bay of Plenty District Health Board"
     },
     {
-      "code": "CMDHB",
-      "display": "Counties Manukau"
+      "code": "ccdhb",
+      "display": "Capital and Coast District Health Board"
+    },
+    {
+      "code": "cmdhb",
+      "display": "Counties Manukau District Health Board"
+    },
+    {
+      "code": "hbdhb",
+      "display": "Hawkes Bay District Health Board"
+    },
+    {
+      "code": "hvdhb",
+      "display": "Hutt Valley District Health Board"
+    },
+    {
+      "code": "lddhb",
+      "display": "Lakes District Health Board"
+    },
+    {
+      "code": "mcdhb",
+      "display": "Mid Central District Health Board"
+    },
+    {
+      "code": "ndhb",
+      "display": "Northland District Health Board"
+    },
+    {
+      "code": "tdhb",
+      "display": "Tairawhiti District Health Board"
+    },
+    {
+      "code": "tardhb",
+      "display": "Taranaki District Health Board"
+    },
+    {
+      "code": "waikdhb",
+      "display": "Waikato District Health Board"
+    },
+    {
+      "code": "wairdhb",
+      "display": "Wairarapa District Health Board"
+    },
+    {
+      "code": "waitdhb",
+      "display": "Waitemata District Health Board"
+    },
+    {
+      "code": "whandhb",
+      "display": "Whanganui District Health Board"
+    },
+    {
+      "code": "cantchb",
+      "display": "Canterbury District Health Board"
+    },
+    {
+      "code": "nmdhb",
+      "display": "Nelson-Marlborough District Health Board"
+    },
+    {
+      "code": "scdhb",
+      "display": "South Canterbury District Health Board"
+    },
+    {
+      "code": "sddhb",
+      "display": "Southern District District Health Board"
+    },
+    {
+      "code": "wcdhb",
+      "display": "West Coast District Health Board"
     }
   ]
 }

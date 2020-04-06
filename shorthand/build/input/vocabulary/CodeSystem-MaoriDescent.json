@@ -4,26 +4,26 @@
   "content": "complete",
   "name": "MaoriDescent",
   "id": "MaoriDescent",
-  "title": "Is the person of maori descent",
+  "title": "Maori Descent",
   "description": "Is the person of maori descent",
   "version": "0.1.0",
-  "url": "https://standards.digital.health.nz/fhir/cs/maoridescent",
+  "url": "https://standards.digital.health.nz/fhir/ValueSet/maoriDescent",
   "concept": [
     {
-      "code": "YES",
+      "code": "yes",
       "display": "Yes"
     },
     {
-      "code": "NO",
+      "code": "no",
       "display": "No"
     },
     {
-      "code": "UNK",
+      "code": "unknown",
       "display": "Unknown"
     },
     {
-      "code": "NA",
-      "display": "Not answered"
+      "code": "notanswered",
+      "display": "Not Answered / Declined to answer"
     }
   ]
 }
