@@ -1,0 +1,1 @@
+{"resourceType":"ValueSet","id":"iwi","status":"draft","name":"iwi","title":"Iwi","description":"New Zealand iwi codes","url":"http://standards.digital.health.nz/fhir/ValueSet/iwi","compose":{"include":[{"system":"http://standards.digital.health.nz/fhir/CodeSystem/iwi"}]}}

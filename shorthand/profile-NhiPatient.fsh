@@ -4,13 +4,14 @@ Alias: $patient-citizenship = http://hl7.org.nz/fhir/StructureDefinition/patient
 Alias: $dhb = http://hl7.org.nz/fhir/StructureDefinition/dhb
 Alias: $patient-countryOfBirth = http://hl7.org.nz/fhir/StructureDefinition/patient-countryOfBirth
 Alias: $suburb = http://hl7.org.nz/fhir/StructureDefinition/suburb
-Alias: $informationsource = http://hl7.org.nz/fhir/StructureDefinition/informationsource
+
 Alias: $buildingName = http://hl7.org.nz/fhir/StructureDefinition/buildingName
 Alias: $patient-addressDerived = http://hl7.org.nz/fhir/StructureDefinition/patient-addressDerived
 Alias: $originalText = http://hl7.org/fhir/StructureDefinition/originalText
 Alias: $ethnicity = http://hl7.org.nz/fhir/StructureDefinition/ethnicity
 Alias: $notValidatedReason = http://hl7.org.nz/fhir/StructureDefinition/notValidatedReason
 Alias: $isPrimary = http://hl7.org.nz/fhir/StructureDefinition/address-isPrimary
+Alias: $informationsource = http://hl7.org.nz/fhir/StructureDefinition/informationsource
 
 //external extensions that are used
 Alias: $isPreferred = http://hl7.org/fhir/StructureDefinition/iso21090-preferred
@@ -32,8 +33,11 @@ Description:    "The Patient resource exposed by the NHI."
 * communication 0..0
 * managingOrganization 0..0
 * link 0..0
-* deceasedBoolean 0..0      //only deceasedDateTime is supported - and only the date part... 
+//* deceasedBoolean 0..0      //only deceasedDateTime is supported - and only the date part... 
+* maritalStatus 0..0
+* multipleBirth[x] 0..0
 
+* deceased[x] only dateTime
 
 //root level extensions
 * extension contains
@@ -60,11 +64,11 @@ Description:    "The Patient resource exposed by the NHI."
    
 //Name is required, and there are extensions for source, and isPreferred
 
-* name  1..1
+* name  1..*
 * name.extension contains
-   
     $informationsource named informationsource 0..1 and
     $isPreferred named isPreferred 0..1
+
 
 
 //The gender has an extension for the original text that was used to establish it (eg from a form)

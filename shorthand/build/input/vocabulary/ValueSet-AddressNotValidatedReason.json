@@ -3,14 +3,14 @@
   "status": "active",
   "name": "AddressNotValidatedReason",
   "id": "AddressNotValidatedReason",
-  "title": "Address not validated reason",
-  "description": "The reason the address was not validated",
+  "title": "Address Not Validated reason",
+  "description": "The reason why the address was not validated",
   "version": "0.1.0",
   "url": "https://standards.digital.health.nz/fhir/ValueSet/addressnotvalidatedreason",
   "compose": {
     "include": [
       {
-        "system": "https://standards.digital.health.nz/fhir/ValueSet/addressnotvalidatedreason"
+        "system": "https://standards.digital.health.nz/fhir/cs/addressnotvalidatedreason"
       }
     ]
   }

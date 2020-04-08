@@ -1,0 +1,15 @@
+﻿dodinfosource,
+http://standards.digital.health.nz/fhir/CodeSystem/dodinfosource,
+http://standards.digital.health.nz/fhir/ValueSet/dodinfosource,
+Date of death information source,
+The source that the date of death was sourced from,
+,
+DREG,Death Register
+MIGR,Migrated
+OSEA,Death Overseas unofficial
+PROV,Provisional
+TRANS,Transition Default
+HL7,HL7 Applied
+MCCOD,Medical Certificate Cause of Death 
+CORONER,Coroner Notification
+OSEAOFF,Death Overseas Official 

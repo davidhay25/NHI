@@ -1,4 +1,10 @@
 #!/bin/bash
+
+echo "Applying IG fix..."
+./fixIG.js
+
+echo "Fix complete.."
+
 set -e
 java -jar input-cache/org.hl7.fhir.publisher.jar -ig ig.ini -t https://r4.ontoserver.csiro.au/fhir/
 

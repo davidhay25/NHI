@@ -1,9 +1,0 @@
-{
-  "resourceType": "Parameters",
-  "id": "matchPatient",
-  "parameter": [
-    {
-      "name": "resource"
-    }
-  ]
-}
