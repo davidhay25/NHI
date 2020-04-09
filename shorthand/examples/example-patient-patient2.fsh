@@ -32,9 +32,9 @@ Usage: #example
 * identifier.value = "ABC1234"
 
 //ethnicity is 'not stated'
-* extension[nzEthnicity].valueCodeableConcept.coding.system = "https://standards.digital.health.nz/codesystem/ethnic-group-level-4"
-* extension[nzEthnicity].valueCodeableConcept.coding.code = #9999
-* extension[nzEthnicity].valueCodeableConcept.coding.display = "Not Stated"
+* extension[ethnicity].valueCodeableConcept.coding.system = "https://standards.digital.health.nz/codesystem/ethnic-group-level-4"
+* extension[ethnicity].valueCodeableConcept.coding.code = #9999
+* extension[ethnicity].valueCodeableConcept.coding.display = "Not Stated"
 
 //email address & phone
 * telecom.system = #email
@@ -45,6 +45,8 @@ Usage: #example
 //physical address
 * address.line = "23 Thule St"
 * address.city = "Waipu"
+* address.extension[suburb].valueString = "Cove"
+* address.extension[buildingName].valueString = "Big Black House"
 
 //DHB (from address) is Counties Manakau DHB (Assuming that Organization1 is the DHB)
 //* extension[dhb].valueReference = Reference(organization1)
@@ -55,23 +57,24 @@ Usage: #example
 
 
 //born in Palmerston North, New Zealand. Verified by passport
-* extension[patient-birthPlace].extension[placeOfBirth].valueString = "Palmerston North"
+* extension[patient-countryOfBirth].extension[placeOfBirth].valueString = "Palmerston North"
 
 //birth country New Zealand. The  is temporary, due to some current limitations with the shorthand generator
-* extension[patient-birthPlace].extension[country].valueCodeableConcept.coding.system = "http://hl7.org/fhir/ValueSet/iso3166-1-2"
-* extension[patient-birthPlace].extension[country].valueCodeableConcept.coding.code = #NZ
-* extension[patient-birthPlace].extension[country].valueCodeableConcept.coding.display = "New Zealand"
+* extension[patient-countryOfBirth].extension[country].valueCodeableConcept.coding.system = "http://hl7.org/fhir/ValueSet/iso3166-1-2"
+* extension[patient-countryOfBirth].extension[country].valueCodeableConcept.coding.code = #NZ
+* extension[patient-countryOfBirth].extension[country].valueCodeableConcept.coding.display = "New Zealand"
 
 //source of information about the birthplace was a passport
-* extension[patient-birthPlace].extension[source].valueCodeableConcept.coding.system = "http://standards.digital.health.nz/fhir/ValueSet/nzinfosource"
-* extension[patient-birthPlace].extension[source].valueCodeableConcept.coding.code = #PPRT
-* extension[patient-birthPlace].extension[source].valueCodeableConcept.coding.display = "Passport"
+* extension[patient-countryOfBirth].extension[source].valueCodeableConcept.coding.system = "http://standards.digital.health.nz/fhir/ValueSet/nzinfosource"
+* extension[patient-countryOfBirth].extension[source].valueCodeableConcept.coding.code = #PPRT
+* extension[patient-countryOfBirth].extension[source].valueCodeableConcept.coding.display = "Passport"
 
 
 
 //The general practitioner is described by the practitionerrole1 resource (has references to Practitioner & Organization)
 * generalPractitioner = Reference(practitionerrole1)
 
+/*
 //The patient is of maori descent...
 * extension[patient-maoriDescent].valueCodeableConcept.coding.system = "http://standards.digital.health.nz/fhir/ValueSet/nzmaoridescent"
 * extension[patient-maoriDescent].valueCodeableConcept.coding.code = #yes
@@ -81,4 +84,4 @@ Usage: #example
 * extension[patient-iwi].valueCodeableConcept.coding.code = #2001
 * extension[patient-iwi].valueCodeableConcept.coding.display = "Tainui"
 
-
+*/

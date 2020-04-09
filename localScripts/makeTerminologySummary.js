@@ -27,49 +27,52 @@ fs.readdirSync(vocabPath).forEach(function(file) {
 
     //let fullFileName = vocabPath + file;     //location of the fsh file
     //let contents = fs.readFileSync(fullFileName, {encoding: 'utf8'})
-
-    let ar = file.split('-')
-    let fullFileName = vocabPath + file;     //location of the fsh file
-    console.log('filename: ' + fullFileName)
-    //create a Binary resource and upload to the server
-    let contents = fs.readFileSync(fullFileName, {encoding: 'utf8'})
-    let resource = JSON.parse(contents.toString())
-
-    if (ar.length > 1) {
-        if (ar[0] == 'ValueSet') {       //this is a profile or an extension...
-            hashVS[resource.url] = {vs:resource,element:[]}
-        }
-
-        if (ar[0] == 'CodeSystem') { 
-
-            arCS.push("<h4>" + resource.name + "</h4>");
-
-            arCS.push("<div class='row'>");
-            arCS.push("<div class='col-6'>");
-            arCS.push("<strong>" + resource.url + "</strong>");
-            arCS.push("</div>")
-
-            arCS.push("<div class='col-6'>");
-            arCS.push("<em>" + resource.description + "</em>");
-            arCS.push("</div>")
-
-            arCS.push("</div>")
-
-            
-
-            arCS.push("<table class='table table-condensed table-bordered'>\n")
-            arCS.push("<tr><th width='15%'>Code</th><th>Display</th></tr>")
-
-            resource.concept.forEach(function(concept){
-                arCS.push("<tr>")
-                arCS.push("<td>" + concept.code + "</td>");
-                arCS.push("<td>" + concept.display + "</td>");
-                arCS.push("</tr>")
-            })
-
-            arCS.push("</table>")
+//console.log(file)
+    if (file !== '.DS_Store') {
+        let ar = file.split('-')
+        let fullFileName = vocabPath + file;     //location of the fsh file
+        console.log('filename: ' + fullFileName)
+        //create a Binary resource and upload to the server
+        let contents = fs.readFileSync(fullFileName, {encoding: 'utf8'})
+        let resource = JSON.parse(contents.toString())
+    
+        if (ar.length > 1) {
+            if (ar[0] == 'ValueSet') {       //this is a profile or an extension...
+                hashVS[resource.url] = {vs:resource,element:[]}
+            }
+    
+            if (ar[0] == 'CodeSystem') { 
+    
+                arCS.push("<h4>" + resource.name + "</h4>");
+    
+                arCS.push("<div class='row'>");
+                arCS.push("<div class='col-6'>");
+                arCS.push("<strong>" + resource.url + "</strong>");
+                arCS.push("</div>")
+    
+                arCS.push("<div class='col-6'>");
+                arCS.push("<em>" + resource.description + "</em>");
+                arCS.push("</div>")
+    
+                arCS.push("</div>")
+    
+                
+    
+                arCS.push("<table class='table table-condensed table-bordered'>\n")
+                arCS.push("<tr><th width='15%'>Code</th><th>Display</th></tr>")
+    
+                resource.concept.forEach(function(concept){
+                    arCS.push("<tr>")
+                    arCS.push("<td>" + concept.code + "</td>");
+                    arCS.push("<td>" + concept.display + "</td>");
+                    arCS.push("</tr>")
+                })
+    
+                arCS.push("</table>")
+            }
         }
     }
+
 })
 
 arCS.push("</div>");
@@ -104,6 +107,8 @@ arModelId.forEach(function(modelId){
                 
                 if (ed.binding) {
                     let url = ed.binding.valueSet;     //the vs canonical url
+
+                    console.log(url)
                     arReport.push("<td>" + url + "</td>");
                     let vo = hashVS[url];
                     if (vo) {

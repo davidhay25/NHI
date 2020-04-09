@@ -10,7 +10,7 @@
   "compose": {
     "include": [
       {
-        "system": "https://standards.digital.health.nz/fhir/cs/addressnotvalidatedreason"
+        "system": "https://standards.digital.health.nz/cs/addressnotvalidatedreason"
       }
     ]
   }

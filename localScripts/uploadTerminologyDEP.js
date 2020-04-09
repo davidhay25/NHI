@@ -9,7 +9,7 @@ console.log("Uploading Terminology resources")
 let path = '../shorthand/build/input/vocabulary/'; 
 
 let fs = require('fs');
-let syncRequest = require('../../common/node_modules/sync-request');
+let syncRequest = require('../../common/node_modules/sync-request/lib');
 let serverRoot = "http://tx.fhir.org/r4/"
 
 

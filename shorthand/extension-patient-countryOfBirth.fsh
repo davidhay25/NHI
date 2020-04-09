@@ -21,4 +21,4 @@ Description: "The country where the person was born"
 * extension[source].url = "source" (exactly)
 * extension[source] ^definition = "The source of information concerning the country of birth"
 * extension[source].value[x] only CodeableConcept
-* extension[source].valueCodeableConcept from https://standards.digital.health.nz/fhir/ValueSet/informationsource (preferred)
+* extension[source].valueCodeableConcept from https://standards.digital.health.nz/fhir/ValueSet/country-informationsource (preferred)

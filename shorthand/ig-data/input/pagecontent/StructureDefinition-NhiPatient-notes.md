@@ -1,4 +1,5 @@
-
+### Shorthand description of profile
+<pre>
 //Extension urls defined in this IG...
 Alias: $patient-citizenship = http://hl7.org.nz/fhir/StructureDefinition/patient-citizenship
 Alias: $dhb = http://hl7.org.nz/fhir/StructureDefinition/dhb
@@ -61,7 +62,7 @@ Description:    "The Patient resource exposed by the NHI."
 * identifier[dormant].use = #old
 
    
-//Name is required, and there are extensions for source, and isPreferred
+<div style="color:green">Name is required, and there are extensions for source, and isPreferred</div>
 
 * name  1..*
 * name.extension contains
@@ -103,3 +104,5 @@ Description:    "The Patient resource exposed by the NHI."
 
 
 
+
+</pre>

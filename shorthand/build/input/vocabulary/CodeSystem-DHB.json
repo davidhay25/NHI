@@ -7,7 +7,7 @@
   "title": "dhb",
   "description": "New Zealand DHBs",
   "version": "0.1.0",
-  "url": "https://standards.digital.health.nz/fhir/ValueSet/dhb",
+  "url": "https://standards.digital.health.nz/cs/dhb",
   "concept": [
     {
       "code": "adhb",

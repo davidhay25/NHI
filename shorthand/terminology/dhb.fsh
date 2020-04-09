@@ -2,11 +2,12 @@ ValueSet: DHB
 Title: "dhb"
 Description: "New Zealand DHBs"
 * ^url = https://standards.digital.health.nz/fhir/ValueSet/dhb
+* codes from system https://standards.digital.health.nz/cs/dhb
 
 CodeSystem: DHB
 Title: "dhb"
 Description: "New Zealand DHBs"
-* ^url = https://standards.digital.health.nz/fhir/ValueSet/dhb
+* ^url = https://standards.digital.health.nz/cs/dhb
 
 * #adhb "Auckland District Health Board"
 * #bopdhb "Bay of Plenty District Health Board"

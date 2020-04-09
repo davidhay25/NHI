@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "BirthDateInformationsource",
+  "id": "BirthDateInformationsource",
+  "title": "BirthDate Information source",
+  "description": "The source of data for birth date",
+  "version": "0.1.0",
+  "url": "https://standards.digital.health.nz/fhir/ValueSet/birthdate-informationsource",
+  "compose": {
+    "include": [
+      {
+        "system": "https://standards.digital.health.nz/cs/informationsource"
+      }
+    ]
+  }
+}

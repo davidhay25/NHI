@@ -7,7 +7,7 @@
   "title": "Domicilecode",
   "description": "New Zealand Domicile codes",
   "version": "0.1.0",
-  "url": "https://standards.digital.health.nz/fhir/ValueSet/domicilecode",
+  "url": "https://standards.digital.health.nz/cs/domicilecode",
   "concept": [
     {
       "code": "0001",

@@ -188,6 +188,14 @@
         ]
       },
       {
+        "id": "Patient.name.extension:informationsource.valueCodeableConcept",
+        "path": "Patient.name.extension.valueCodeableConcept",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/name-informationsource"
+        }
+      },
+      {
         "id": "Patient.name.extension:isPreferred",
         "path": "Patient.name.extension",
         "sliceName": "isPreferred",
@@ -263,6 +271,14 @@
         ]
       },
       {
+        "id": "Patient.birthDate.extension:informationsource.valueCodeableConcept",
+        "path": "Patient.birthDate.extension.valueCodeableConcept",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/birthdate-informationsource"
+        }
+      },
+      {
         "id": "Patient.deceased[x]",
         "path": "Patient.deceased[x]",
         "slicing": {
@@ -314,9 +330,25 @@
         ]
       },
       {
+        "id": "Patient.deceasedDateTime.extension:informationsource.valueCodeableConcept",
+        "path": "Patient.deceasedDateTime.extension.valueCodeableConcept",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/deathdate-informationsource"
+        }
+      },
+      {
         "id": "Patient.address",
         "path": "Patient.address",
-        "min": 1
+        "min": 1,
+        "type": [
+          {
+            "code": "Address",
+            "profile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/NzAddress"
+            ]
+          }
+        ]
       },
       {
         "id": "Patient.address.extension:buildingName",
@@ -328,20 +360,6 @@
             "code": "Extension",
             "profile": [
               "http://hl7.org.nz/fhir/StructureDefinition/buildingName"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Patient.address.extension:suburb",
-        "path": "Patient.address.extension",
-        "sliceName": "suburb",
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/suburb"
             ]
           }
         ]

@@ -7,7 +7,7 @@
   "title": "Information source",
   "description": "The source of this data",
   "version": "0.1.0",
-  "url": "https://standards.digital.health.nz/fhir/cs/informationsource",
+  "url": "https://standards.digital.health.nz/cs/informationsource",
   "concept": [
     {
       "code": "BREG",

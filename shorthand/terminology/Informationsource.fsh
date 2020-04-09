@@ -3,13 +3,21 @@ Title: "Information source"
 Description: "The source of this data"
 
 * ^url = https://standards.digital.health.nz/fhir/ValueSet/informationsource
-* codes from system https://standards.digital.health.nz/fhir/cs/informationsource
+* codes from system https://standards.digital.health.nz/cs/informationsource
+
+ValueSet: BirthDateInformationsource
+Title: "BirthDate Information source"
+Description: "The source of data for birth date"
+
+* ^url = https://standards.digital.health.nz/fhir/ValueSet/birthdate-informationsource
+
+* codes from system https://standards.digital.health.nz/cs/informationsource
 
 
 CodeSystem: Informationsource
 Title: "Information source"
 Description: "The source of this data"
-* ^url = https://standards.digital.health.nz/fhir/cs/informationsource
+* ^url = https://standards.digital.health.nz/cs/informationsource
 
 * #BREG "Birth Register"
 * #HL7 "HL7 applied"
