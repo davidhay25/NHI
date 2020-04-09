@@ -10,7 +10,7 @@ This takes the form:
 
     [host]/Patient/{nhi number}
 
-This works because the id of the resource is the same as the current NHI number. 
+This works because the id of the resource is the same as the live NHI number. 
 
 
 The NHI is also included in the resource with the 'identifier.use' element having the value 'official'. Previous NHI numbers will be included in the resources as 'dormant' identifiers (identifier.use = 'old')
