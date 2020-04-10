@@ -5,7 +5,7 @@
   "name": "Informationsource",
   "id": "Informationsource",
   "title": "Information source",
-  "description": "The source of this data",
+  "description": "The codesystem used to indivate where data has been soruced from. The ValueSets for recording source of Name, birthDate, date of death and country of birth all use this codesystem",
   "version": "0.1.0",
   "url": "https://standards.digital.health.nz/cs/informationsource",
   "concept": [

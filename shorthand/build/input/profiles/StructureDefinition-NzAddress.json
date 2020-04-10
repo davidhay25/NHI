@@ -6,7 +6,7 @@
   "name": "NzAddress",
   "title": "NZ Address",
   "status": "active",
-  "description": "Additions to Address common to New Zealand",
+  "description": "Adds 'suburb' to Address for use within New Zealand",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

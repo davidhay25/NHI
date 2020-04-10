@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "name": "Ethnicity",
   "status": "active",
-  "description": "The ethnicity of the patient. One to six level 4 codes.",
+  "description": "The ethnicity of the patient. Currently using level 4 codes.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -61,7 +61,7 @@
         "path": "Extension.valueCodeableConcept",
         "binding": {
           "strength": "preferred",
-          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/ethnicity"
+          "valueSet": "https://standards.digital.health.nz/ValueSet/ethnic-group-level-4"
         }
       }
     ]

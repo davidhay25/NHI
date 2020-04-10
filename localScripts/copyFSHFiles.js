@@ -27,16 +27,22 @@ fs.readdirSync(path).forEach(function(file) {
 
         let arLines = contents.split('\n')
         let arOutput = []
+        arOutput.push("### Shorthand description of artifact")
+        arOutput.push("");
+        arOutput.push("<pre>")
         arLines.forEach(function(line){
+
             let ar = line.split(" ");
-            if (ar[0] == 'Id:') {
-                outFileName = "../shorthand/build/input/pagecontent/StructureDefinition-"+ ar[1] + '.md'
+            if (line.substr(0,3) == 'Id:') {
+                let id = line.substr(3).trim();
+                outFileName = "../shorthand/build/input/pagecontent/StructureDefinition-"+ id + '-notes.md'
                 console.log(outFileName)
                
             }
 
-            if (ar[0] == '//') {
+            if (line.substr(0,2) == '//') {
                 let newLine = "<div style='color:green'>" + line + "</div>"
+                //console.log('comment ' + newLine)
                 arOutput.push(newLine)
             } else {
                 arOutput.push(line)
@@ -46,6 +52,7 @@ fs.readdirSync(path).forEach(function(file) {
         //console.log(line)
         })
         if (outFileName) {
+            arOutput.push("</pre>")
             let newFile = arOutput.join('\n')
             fs.writeFileSync(outFileName,newFile)
         }

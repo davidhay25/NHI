@@ -140,6 +140,7 @@
       {
         "id": "Patient.identifier:NHI.use",
         "path": "Patient.identifier.use",
+        "min": 1,
         "fixedCode": "official"
       },
       {
@@ -156,7 +157,8 @@
       {
         "id": "Patient.identifier:dormant.use",
         "path": "Patient.identifier.use",
-        "patternCode": "old"
+        "min": 1,
+        "fixedCode": "old"
       },
       {
         "id": "Patient.identifier:dormant.system",
@@ -345,63 +347,7 @@
           {
             "code": "Address",
             "profile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/NzAddress"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Patient.address.extension:buildingName",
-        "path": "Patient.address.extension",
-        "sliceName": "buildingName",
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/buildingName"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Patient.address.extension:patient-addressDerived",
-        "path": "Patient.address.extension",
-        "sliceName": "patient-addressDerived",
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/patient-addressDerived"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Patient.address.extension:notValidatedReason",
-        "path": "Patient.address.extension",
-        "sliceName": "notValidatedReason",
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/notValidatedReason"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Patient.address.extension:isPrimary",
-        "path": "Patient.address.extension",
-        "sliceName": "isPrimary",
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/address-isPrimary"
+              "http://hl7.org.nz/fhir/StructureDefinition/NhizAddress"
             ]
           }
         ]

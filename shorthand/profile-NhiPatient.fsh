@@ -5,12 +5,12 @@ Alias: $dhb = http://hl7.org.nz/fhir/StructureDefinition/dhb
 Alias: $patient-countryOfBirth = http://hl7.org.nz/fhir/StructureDefinition/patient-countryOfBirth
 
 
-Alias: $buildingName = http://hl7.org.nz/fhir/StructureDefinition/buildingName
-Alias: $patient-addressDerived = http://hl7.org.nz/fhir/StructureDefinition/patient-addressDerived
+//Alias: $buildingName = http://hl7.org.nz/fhir/StructureDefinition/buildingName
+//Alias: $patient-addressDerived = http://hl7.org.nz/fhir/StructureDefinition/patient-addressDerived
 Alias: $originalText = http://hl7.org/fhir/StructureDefinition/originalText
 Alias: $ethnicity = http://hl7.org.nz/fhir/StructureDefinition/ethnicity
-Alias: $notValidatedReason = http://hl7.org.nz/fhir/StructureDefinition/notValidatedReason
-Alias: $isPrimary = http://hl7.org.nz/fhir/StructureDefinition/address-isPrimary
+//Alias: $notValidatedReason = http://hl7.org.nz/fhir/StructureDefinition/notValidatedReason
+//Alias: $isPrimary = http://hl7.org.nz/fhir/StructureDefinition/address-isPrimary
 Alias: $informationsource = http://hl7.org.nz/fhir/StructureDefinition/informationsource
 
 //external extensions that are used
@@ -58,7 +58,7 @@ Description:    "The Patient resource exposed by the NHI."
 * identifier[NHI].use = #official (exactly)
 
 * identifier[dormant].system = "https://standards.digital.health.nz/id/nhi"
-* identifier[dormant].use = #old
+* identifier[dormant].use = #old (exactly)
 
    
 //Name is required, and there are extensions for source, and isPreferred
@@ -85,16 +85,18 @@ Description:    "The Patient resource exposed by the NHI."
     $informationsource named informationsource 0..1
 * deceasedDateTime.extension[informationsource].valueCodeableConcept from  https://standards.digital.health.nz/fhir/ValueSet/deathdate-informationsource
 
-// address is required and has a number of extensions. It 'descends' from the NzAddress datatype profile, which brings in the suburb...
-* address only NzAddress
+// address is required and has a number of extensions. It uses NhiAddress which takes NzAddress and adds NHI specific extensions...
+
+* address only NhiAddress
 * address 1..*
 * address.line 1..*     //there will always be at least 1 line
+/*
 * address.extension contains
     $buildingName named buildingName 0..1 and   //the name of the building - as it is known locally
     $patient-addressDerived named patient-addressDerived 0..1 and    //a set of data derived from the address
     $notValidatedReason named notValidatedReason 0..1 and
     $isPrimary named isPrimary 0..1
-
+*/
 //Limit the possible resources for generalPractitioner only to a PractitionerRole
 //Note that this might still be a contained resource - that's still supported by this profile
 * generalPractitioner only Reference(PractitionerRole)
