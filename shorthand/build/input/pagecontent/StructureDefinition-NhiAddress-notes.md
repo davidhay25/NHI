@@ -1,3 +1,6 @@
+### Shorthand description of artifact
+
+<pre>
 Alias: $suburb = http://hl7.org.nz/fhir/StructureDefinition/suburb
 
 Alias: $buildingName = http://hl7.org.nz/fhir/StructureDefinition/buildingName
@@ -31,3 +34,4 @@ Description:    "Adds additional, NHI specific extensions"
     $patient-addressDerived named patient-addressDerived 0..1 and    //a set of data derived from the address
     $notValidatedReason named notValidatedReason 0..1 and
     $isPrimary named isPrimary 0..1
+</pre>

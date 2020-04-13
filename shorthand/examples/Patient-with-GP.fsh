@@ -2,6 +2,10 @@ Instance:   Gp-Patient
 InstanceOf: NhiPatient
 Description: "Shows the usual GP for a patient"
 Usage: #example
+
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Shows the usual GP for a patient</div>"
+* text.status = #additional
+
 * contained = Pr
 
 * name.text = " John Doe"

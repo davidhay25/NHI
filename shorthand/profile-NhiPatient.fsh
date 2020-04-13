@@ -14,7 +14,7 @@ Alias: $ethnicity = http://hl7.org.nz/fhir/StructureDefinition/ethnicity
 Alias: $informationsource = http://hl7.org.nz/fhir/StructureDefinition/informationsource
 
 //external extensions that are used
-Alias: $isPreferred = http://hl7.org/fhir/StructureDefinition/iso21090-preferred
+Alias: $preferred = http://hl7.org/fhir/StructureDefinition/iso21090-preferred
 
 Profile:        NhiPatient
 Parent:         Patient
@@ -45,7 +45,7 @@ Description:    "The Patient resource exposed by the NHI."
     $patient-countryOfBirth named patient-countryOfBirth 0..1 and
     $ethnicity named ethnicity 0..4 
 
-//identifier - add  dormant
+//identifier. Slice to have current (use=official) and dormant (use=old)
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "use"
 * identifier ^slicing.rules = #openAtEnd
@@ -62,14 +62,12 @@ Description:    "The Patient resource exposed by the NHI."
 
    
 //Name is required, and there are extensions for source, and isPreferred
-
 * name  1..*
 * name.extension contains
     $informationsource named informationsource 0..1 and
-    $isPreferred named isPreferred 0..1
+    $preferred named preferred 0..1
 * name.extension[informationsource].valueCodeableConcept from  https://standards.digital.health.nz/fhir/ValueSet/name-informationsource
   
-
 //The gender has an extension for the original text that was used to establish it (eg from a form)
 * gender.extension contains 
     $originalText named originalText 0..1
@@ -86,17 +84,10 @@ Description:    "The Patient resource exposed by the NHI."
 * deceasedDateTime.extension[informationsource].valueCodeableConcept from  https://standards.digital.health.nz/fhir/ValueSet/deathdate-informationsource
 
 // address is required and has a number of extensions. It uses NhiAddress which takes NzAddress and adds NHI specific extensions...
-
 * address only NhiAddress
 * address 1..*
 * address.line 1..*     //there will always be at least 1 line
-/*
-* address.extension contains
-    $buildingName named buildingName 0..1 and   //the name of the building - as it is known locally
-    $patient-addressDerived named patient-addressDerived 0..1 and    //a set of data derived from the address
-    $notValidatedReason named notValidatedReason 0..1 and
-    $isPrimary named isPrimary 0..1
-*/
+
 //Limit the possible resources for generalPractitioner only to a PractitionerRole
 //Note that this might still be a contained resource - that's still supported by this profile
 * generalPractitioner only Reference(PractitionerRole)

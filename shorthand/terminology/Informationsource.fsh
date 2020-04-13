@@ -53,7 +53,17 @@ Description: "The source of data for country of birth data"
 * $csInfoSource#NZPV "New Zealand Permanent Visa"
 * $csInfoSource#NZTV "New Zealand Resident Visa"
 
+//Used by the citizenship
+ValueSet: CitizenshipInformationsource
+Title: "Citizenship Information source"
+Description: "The source of data for Citizenship"
+* ^url = https://standards.digital.health.nz/fhir/ValueSet/citizenship-informationsource
 
+* $csInfoSource#PPRT "Passport"
+* $csInfoSource#NZRS "New Zealand Residency"
+* $csInfoSource#TRANS "Transition Default"
+* $csInfoSource#NZPV "New Zealand Permanent Visa"
+* $csInfoSource#NZTV "New Zealand Resident Visa"
 
 
 //The code system that is common to all 'inforrmation source' valuesets

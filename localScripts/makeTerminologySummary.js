@@ -75,7 +75,8 @@ fs.readdirSync(vocabPath).forEach(function(file) {
 
 })
 
-arCS.push("</div>");
+//the codesystem display doesn't add value to the existing IG pages
+//arCS.push("</div>");
 //console.log(hashVS)
 //next, load the models and create the report
 

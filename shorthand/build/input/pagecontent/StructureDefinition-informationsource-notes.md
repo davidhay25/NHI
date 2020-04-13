@@ -11,7 +11,7 @@ Description: "The source of the information"
 
 * extension 0..0
 * value[x] only CodeableConcept
-* valueCodeableConcept from https://standards.digital.health.nz/fhir/ValueSet/informationsource (preferred)
+<div style='color:green'>//* valueCodeableConcept from https://standards.digital.health.nz/fhir/ValueSet/informationsource (preferred)</div>
 
 
 </pre>

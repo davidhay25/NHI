@@ -14,13 +14,21 @@ Usage: #example
 * name.extension[informationsource].valueCodeableConcept.coding.code = #NZPV
 * name.extension[informationsource].valueCodeableConcept.coding.display = "New Zealand Permanent Visa"
 
+* name.extension[preferred].valueBoolean = true
+
 * gender = #male
+* gender.extension[originalText].valueString = "Bloke"
 
 //Birth date, verified by passport
 * birthDate = "1989-12-12"
 * birthDate.extension[informationsource].valueCodeableConcept.coding.system = "https://standards.digital.health.nz/cs/informationsource"
 * birthDate.extension[informationsource].valueCodeableConcept.coding.code = #PPRT
 * birthDate.extension[informationsource].valueCodeableConcept.coding.display = "Passport"
+
+* deceasedDateTime = "2020-01-01"
+* deceasedDateTime.extension[informationsource].valueCodeableConcept.coding.system = "https://standards.digital.health.nz/cs/informationsource"
+* deceasedDateTime.extension[informationsource].valueCodeableConcept.coding.code = #NPRF
+* deceasedDateTime.extension[informationsource].valueCodeableConcept.coding.display = "Proof not sighted"
 
 //the current NHI
 * identifier.use = #official
@@ -46,21 +54,33 @@ Usage: #example
 //physical address
 * address.line = "23 Thule St"
 * address.city = "Waipu"
-* address.extension[suburb].valueString = "Cove"
+* address.extension[suburb].valueString = "Waipu river"
 * address.extension[buildingName].valueString = "Big Black House"
+* address.extension[address-isPrimary].valueBoolean = true
+
+* address.extension[notValidatedReason].valueCodeableConcept.coding.system = "https://standards.digital.health.nz/cs/addressnotvalidatedreason"
+* address.extension[notValidatedReason].valueCodeableConcept.coding.code = #UKWN
+* address.extension[notValidatedReason].valueCodeableConcept.coding.display = "Address unknown"
+
+* address.extension[patient-addressDerived].extension[latitude].valueDecimal = 100
+* address.extension[patient-addressDerived].extension[longitude].valueDecimal = 100
+* address.extension[patient-addressDerived].extension[meshblock].valueString = "mb100"
+* address.extension[patient-addressDerived].extension[depdecile].valueString = "dec100"
+* address.extension[patient-addressDerived].extension[depquintile].valueString = "quin100"
+* address.extension[patient-addressDerived].extension[domcode].valueCodeableConcept.coding.system = "https://standards.digital.health.nz/cs/domicilecode"
+* address.extension[patient-addressDerived].extension[domcode].valueCodeableConcept.coding.code = #0040
+* address.extension[patient-addressDerived].extension[domcode].valueCodeableConcept.coding.display = "Waipu"
+* address.extension[patient-addressDerived].extension[said].valueString = "said"
 
 //DHB (from address) is Counties Manakau DHB (Assuming that Organization1 is the DHB)
-//* extension[dhb].valueReference = Reference(organization1)
-
 * extension[dhb].valueCodeableConcept.coding.system = "https://standards.digital.health.nz/cs/dhb"
 * extension[dhb].valueCodeableConcept.coding.code = #cmdhb
-
 
 
 //born in Palmerston North, New Zealand. Verified by passport
 * extension[patient-countryOfBirth].extension[placeOfBirth].valueString = "Palmerston North"
 
-//birth country New Zealand. The  is temporary, due to some current limitations with the shorthand generator
+//birth country New Zealand
 * extension[patient-countryOfBirth].extension[country].valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
 * extension[patient-countryOfBirth].extension[country].valueCodeableConcept.coding.code = #NZ
 * extension[patient-countryOfBirth].extension[country].valueCodeableConcept.coding.display = "New Zealand"
@@ -69,6 +89,30 @@ Usage: #example
 * extension[patient-countryOfBirth].extension[source].valueCodeableConcept.coding.system = "https://standards.digital.health.nz/cs/informationsource"
 * extension[patient-countryOfBirth].extension[source].valueCodeableConcept.coding.code = #PPRT
 * extension[patient-countryOfBirth].extension[source].valueCodeableConcept.coding.display = "Passport"
+
+//citizenship status - is a citizen
+* extension[patient-citizenship].extension[status].valueCodeableConcept.coding.system = "https://standards.digital.health.nz/cs/citizenshipstatus"
+* extension[patient-citizenship].extension[source].valueCodeableConcept.coding.code = #CIT
+* extension[patient-citizenship].extension[source].valueCodeableConcept.coding.display = "Citizen"
+
+//source of citizenship about the birthplace was a passport
+* extension[patient-citizenship].extension[source].valueCodeableConcept.coding.system = "https://standards.digital.health.nz/cs/informationsource"
+* extension[patient-citizenship].extension[source].valueCodeableConcept.coding.code = #PPRT
+* extension[patient-citizenship].extension[source].valueCodeableConcept.coding.display = "Passport"
+
+//DHB is counties manukau
+* extension[dhb].valueCodeableConcept.coding.system = "https://standards.digital.health.nz/cs/dhb"
+* extension[dhb].valueCodeableConcept.coding.code = #cmdhb
+* extension[dhb].valueCodeableConcept.coding.display = "Counties Manukau District Health Board"
+
+//ethnicity English & Irish
+* extension[ethnicity].valueCodeableConcept.coding.system = "https://standards.digital.health.nz/cs/ethnic-group-level-4"
+* extension[ethnicity].valueCodeableConcept.coding.code = #12114
+* extension[ethnicity].valueCodeableConcept.coding.display = "English"
+
+* extension[ethnicity][1].valueCodeableConcept.coding.system = "https://standards.digital.health.nz/cs/ethnic-group-level-4"
+* extension[ethnicity][1].valueCodeableConcept.coding.code = #12116
+* extension[ethnicity][1].valueCodeableConcept.coding.display = "Irish"
 
 
 

@@ -198,9 +198,9 @@
         }
       },
       {
-        "id": "Patient.name.extension:isPreferred",
+        "id": "Patient.name.extension:preferred",
         "path": "Patient.name.extension",
-        "sliceName": "isPreferred",
+        "sliceName": "preferred",
         "max": "1",
         "type": [
           {
@@ -347,7 +347,7 @@
           {
             "code": "Address",
             "profile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/NhizAddress"
+              "http://hl7.org.nz/fhir/StructureDefinition/NhiAddress"
             ]
           }
         ]

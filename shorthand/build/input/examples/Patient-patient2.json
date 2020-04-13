@@ -20,6 +20,10 @@
               }
             ]
           }
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/iso21090-preferred",
+          "valueBoolean": true
         }
       ],
       "family": "Doe",
@@ -29,6 +33,14 @@
       ]
     }
   ],
+  "_gender": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/originalText",
+        "valueString": "Bloke"
+      }
+    ]
+  },
   "_birthDate": {
     "extension": [
       {
@@ -45,6 +57,22 @@
       }
     ]
   },
+  "_deceasedDateTime": {
+    "extension": [
+      {
+        "url": "http://hl7.org.nz/fhir/StructureDefinition/informationsource",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "https://standards.digital.health.nz/cs/informationsource",
+              "code": "NPRF",
+              "display": "Proof not sighted"
+            }
+          ]
+        }
+      }
+    ]
+  },
   "extension": [
     {
       "url": "http://hl7.org.nz/fhir/StructureDefinition/ethnicity",
@@ -52,8 +80,8 @@
         "coding": [
           {
             "system": "https://standards.digital.health.nz/cs/ethnic-group-level-4",
-            "code": "99999",
-            "display": "Not Stated"
+            "code": "12114",
+            "display": "English"
           }
         ]
       }
@@ -64,7 +92,8 @@
         "coding": [
           {
             "system": "https://standards.digital.health.nz/cs/dhb",
-            "code": "cmdhb"
+            "code": "cmdhb",
+            "display": "Counties Manukau District Health Board"
           }
         ]
       }
@@ -101,6 +130,45 @@
         }
       ],
       "url": "http://hl7.org.nz/fhir/StructureDefinition/patient-countryOfBirth"
+    },
+    {
+      "extension": [
+        {
+          "url": "status",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "https://standards.digital.health.nz/cs/citizenshipstatus"
+              }
+            ]
+          }
+        },
+        {
+          "url": "source",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "PPRT",
+                "display": "Passport",
+                "system": "https://standards.digital.health.nz/cs/informationsource"
+              }
+            ]
+          }
+        }
+      ],
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/patient-citizenship"
+    },
+    {
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/ethnicity",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://standards.digital.health.nz/cs/ethnic-group-level-4",
+            "code": "12116",
+            "display": "Irish"
+          }
+        ]
+      }
     }
   ],
   "address": [
@@ -108,11 +176,68 @@
       "extension": [
         {
           "url": "http://hl7.org.nz/fhir/StructureDefinition/suburb",
-          "valueString": "Cove"
+          "valueString": "Waipu river"
         },
         {
           "url": "http://hl7.org.nz/fhir/StructureDefinition/buildingName",
           "valueString": "Big Black House"
+        },
+        {
+          "url": "http://hl7.org.nz/fhir/StructureDefinition/address-isPrimary",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://hl7.org.nz/fhir/StructureDefinition/notValidatedReason",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "https://standards.digital.health.nz/cs/addressnotvalidatedreason",
+                "code": "UKWN",
+                "display": "Address unknown"
+              }
+            ]
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "latitude",
+              "valueDecimal": 100
+            },
+            {
+              "url": "longitude",
+              "valueDecimal": 100
+            },
+            {
+              "url": "meshblock",
+              "valueString": "mb100"
+            },
+            {
+              "url": "depdecile",
+              "valueString": "dec100"
+            },
+            {
+              "url": "depquintile",
+              "valueString": "quin100"
+            },
+            {
+              "url": "domcode",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "https://standards.digital.health.nz/cs/domicilecode",
+                    "code": "0040",
+                    "display": "Waipu"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "said",
+              "valueString": "said"
+            }
+          ],
+          "url": "http://hl7.org.nz/fhir/StructureDefinition/patient-addressDerived"
         }
       ],
       "line": [
@@ -159,6 +284,7 @@
   },
   "gender": "male",
   "birthDate": "1989-12-12",
+  "deceasedDateTime": "2020-01-01",
   "identifier": [
     {
       "use": "old",

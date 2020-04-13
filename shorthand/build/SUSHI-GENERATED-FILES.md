@@ -23,5 +23,7 @@ lists those files generated from project configs or the contents in the ig-data 
 | package-list.json                             | generated | ../package.json                                                     |
 | input/includes/menu.xml                       | copied    | ../ig-data/input/includes/menu.xml                                  |
 | input/pagecontent/.DS_Store                   | copied    | ../ig-data/input/pagecontent/.DS_Store                              |
+| input/pagecontent/API.md                      | copied    | ../ig-data/input/pagecontent/API.md                                 |
 | input/pagecontent/index.md                    | copied    | ../ig-data/input/pagecontent/index.md                               |
+| input/pagecontent/notes.md                    | copied    | ../ig-data/input/pagecontent/notes.md                               |
 | package.json                                  | copied    | ../package.json                                                     |
